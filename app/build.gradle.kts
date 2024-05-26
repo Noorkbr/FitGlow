@@ -47,10 +47,8 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.navigation)
     implementation(libs.navui)
-    implementation(libs.navsafearg)
-    implementation(libs.androidx.annotation)
-    implementation(libs.androidx.lifecycle.livedata.ktx)
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+ 
     //SDP - a scalable size unit
     implementation(libs.ssp.android)
     implementation(libs.sdp.android)

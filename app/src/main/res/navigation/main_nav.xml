@@ -34,15 +34,79 @@
         <action
             android:id="@+id/action_welcomeFragment3_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment3_to_signupFragment"
+            app:destination="@id/signupFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.fitglow.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signupFragment"
         android:name="com.example.fitglow.signupFragment"
         android:label="fragment_signup"
-        tools:layout="@layout/fragment_signup" />
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_genderFragment"
+            app:destination="@id/genderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderFragment"
+        android:name="com.example.fitglow.GenderFragment"
+        android:label="fragment_gender"
+        tools:layout="@layout/fragment_gender" >
+        <action
+            android:id="@+id/action_genderFragment_to_heightFragment"
+            app:destination="@id/heightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heightFragment"
+        android:name="com.example.fitglow.HeightFragment"
+        android:label="fragment_height"
+        tools:layout="@layout/fragment_height" >
+        <action
+            android:id="@+id/action_heightFragment_to_weightFragment"
+            app:destination="@id/weightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.example.fitglow.WeightFragment"
+        android:label="fragment_weight"
+        tools:layout="@layout/fragment_weight" >
+        <action
+            android:id="@+id/action_weightFragment_to_goalweightFragment"
+            app:destination="@id/goalweightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalweightFragment"
+        android:name="com.example.fitglow.GoalweightFragment"
+        android:label="fragment_goalweight"
+        tools:layout="@layout/fragment_goalweight" >
+        <action
+            android:id="@+id/action_goalweightFragment_to_trainingLevelFragment"
+            app:destination="@id/trainingLevelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainingLevelFragment"
+        android:name="com.example.fitglow.TrainingLevelFragment"
+        android:label="fragment_training_level"
+        tools:layout="@layout/fragment_training_level" >
+        <action
+            android:id="@+id/action_trainingLevelFragment_to_chooseActivitiesFragment"
+            app:destination="@id/chooseActivitiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseActivitiesFragment"
+        android:name="com.example.fitglow.chooseActivitiesFragment"
+        android:label="fragment_choose_activities"
+        tools:layout="@layout/fragment_choose_activities" />
 </navigation>

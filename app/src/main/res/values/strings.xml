@@ -5,6 +5,14 @@
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
+
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Gay</item>
+    </string-array>
+
+
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome!"</string>
@@ -27,4 +35,38 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="sign_in_with">Sign in with</string>
     <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">Full Name</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign In</string>
+    <string name="by_continuing_you_accept_our_privacy_policy">By continuing you accept our Privacy Policy</string>
+    <string name="let_s_go">Let\'s Go</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="step_1_0f_7">Step 1 0f 7</string>
+    <string name="choose_your_gender">Choose your Gender</string>
+    <string name="continue1">Continue</string>
+    <string name="continue2">Continue</string>
+    <string name="select_your_height">Select your height</string>
+    <string name="select_your_weight">Select your weight</string>
+    <string name="choose_training_level">Choose training \nlevel</string>
+    <string name="choose_activities_that_interest">Choose activities \nthat interest</string>
+    <string name="man">Man</string>
+    <string name="sign_up1">Sign up</string>
+    <string name="feet">Feet</string>
+    <string name="centimetre">Centimetre</string>
+    <string name="cm">cm</string>
+    <string name="pound">Pound</string>
+    <string name="kilogram">Kilogram</string>
+    <string name="kg">Kg</string>
+    <string name="select_goal_weight">Select goal weight</string>
+    <string name="step_2_of_7">Step 2 of 6</string>
+    <string name="step_3_of_7">Step 3 of 6</string>
+    <string name="step_1_of_6">Step 1 of 6</string>
+    <string name="step_for_of_6">Step for of 6</string>
+    <string name="step_4_of_6">Step 4 of 6</string>
+    <string name="step_5_of_6">Step 5 of 6</string>
+    <string name="step_6_of_6">Step 6 of 6</string>
+    <string name="home">Home</string>
+    <string name="training">Training</string>
+    <string name="activity">Activity</string>
+    <string name="profile">Profile</string>
 </resources>
