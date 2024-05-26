@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FitGlow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="already_have_account">already_have_account</string>
+    <string name="get_started">Get Started</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="fitglow_has_workouts_on_demand_that_you_can_find_based_on_how_much_time_you_have">FitGlow has workouts on demand that you can find based on how much time you have</string>
+    <string name="next">Next</string>
+    <string name="workout_categories_will_help_you_gain_strength_get_in_better_shape_and_embrace_a_healthy_lifestyle">Workout categories will help you gain strength, get in better shape and embrace a healthy lifestyle.</string>
+    <string name="welcome_to_fitglow">Welcome To FitGlow</string>
+    <string name="create_and_save_your_own_custom_workouts_name_your_workouts_save_them_and_they_ll_automatically_appear_when_you_re_ready_to_workout">Create and save your own custom workouts. Name your workouts, save them, and they’ll automatically appear when you’re ready to workout</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="phone_email">Phone / Email</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in_with">Sign in with</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+</resources>
