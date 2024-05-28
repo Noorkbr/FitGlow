@@ -59,6 +59,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     private fun setRecyclerData() {
         workoutItemAdapter = WorkoutItemAdapter(workoutsItem)
 
+        binding.workoutItemRecycler.adapter = workoutItemAdapter
 
 
 
@@ -68,12 +69,14 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
 
     private fun setRecycler1Data() {
         categoryItemAdapter = CategoryItemAdapter(categoryItem)
+        binding.categoryItemList.adapter = categoryItemAdapter
     }
 
     private fun setRecycler2Data() {
         exercisesItemAdapter = ExercisesItemAdapter(exercisesItem)
 
 
+        binding.exercisesItemRecycler.adapter = exercisesItemAdapter
 
 
     }

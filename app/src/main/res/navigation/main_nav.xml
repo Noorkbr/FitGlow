@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/landingFragment"
-        android:name="com.example.fitglow.welcome.landingFragment"
+        android:name="com.example.fitglow.SplashScreens.landingFragment"
         android:label="fragment_landing"
         tools:layout="@layout/fragment_landing" >
         <action

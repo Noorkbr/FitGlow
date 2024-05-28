@@ -7,7 +7,7 @@ import com.example.fitglow.adapters.ListAdapter
 import com.example.fitglow.base.BaseFragment
 import com.example.fitglow.data.ListData
 import com.example.fitglow.databinding.FragmentChooseActivitiesBinding
-import com.example.fitglow.ui.SplashActivity
+import com.example.fitglow.SplashScreens.SplashActivity
 
 class chooseActivitiesFragment : BaseFragment<FragmentChooseActivitiesBinding>(FragmentChooseActivitiesBinding::inflate) {
 
@@ -42,7 +42,7 @@ class chooseActivitiesFragment : BaseFragment<FragmentChooseActivitiesBinding>(F
             }
 
         binding.loginButton.setOnClickListener {
-            startActivity(Intent(requireContext(),SplashActivity::class.java))
+            startActivity(Intent(requireContext(), SplashActivity::class.java))
             requireActivity().finish()
         }
 

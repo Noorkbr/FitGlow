@@ -16,7 +16,7 @@
             android:name=".ui.MainSplashActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SplashActivity"
+            android:name=".SplashScreens.SplashActivity"
             android:exported="false" />
         <activity
             android:name=".ui.DashboardActivity"

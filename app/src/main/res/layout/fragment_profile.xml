@@ -14,11 +14,11 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.3" />
 
-    <View
+    <ImageView
         android:id="@+id/headerBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/lavender" />
+        android:src="@drawable/fitglowposter" />
 
     <ImageView
         android:id="@+id/cardProfile"
@@ -45,25 +45,17 @@
             android:layout_height="wrap_content"
             android:text="Noor"
             android:textSize="28sp"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/statusField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Online"
-            android:textColor="@android:color/white" />
+            android:textColor="#317C34" />
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_dialog_email"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
