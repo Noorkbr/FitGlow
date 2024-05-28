@@ -69,4 +69,6 @@
     <string name="training">Training</string>
     <string name="activity">Activity</string>
     <string name="profile">Profile</string>
+    <string name="online">Online</string>
+    <string name="noor">Noor</string>
 </resources>

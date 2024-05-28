@@ -24,11 +24,10 @@
         android:id="@+id/cardProfile"
         android:layout_width="0dp"
         android:layout_height="340dp"
-        android:src="@drawable/maad_20240516_165036_0000"
+        android:src="@drawable/mad_max"
         android:scaleType="centerCrop"
         app:cardCornerRadius="0dp"
-        app:cardElevation="0dp"
-         />
+        app:cardElevation="0dp" />
 
     <LinearLayout
         android:id="@+id/linear"
@@ -43,7 +42,7 @@
             android:id="@+id/nameField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Noor"
+            android:text="@string/noor"
             android:textSize="28sp"
             android:textColor="@android:color/black" />
 
@@ -51,7 +50,7 @@
             android:id="@+id/statusField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Online"
+            android:text="@string/online"
             android:textColor="#317C34" />
     </LinearLayout>
 
