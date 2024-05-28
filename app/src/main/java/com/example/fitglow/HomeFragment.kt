@@ -1,59 +1,81 @@
 package com.example.fitglow
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import com.example.fitglow.adapters.CategoryItemAdapter
+import com.example.fitglow.adapters.ExercisesItemAdapter
+import com.example.fitglow.adapters.WorkoutItemAdapter
+import com.example.fitglow.base.BaseFragment
+import com.example.fitglow.data.ListData
+import com.example.fitglow.data.WorkoutItemData
+import com.example.fitglow.databinding.FragmentHomeBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
+    private lateinit var categoryItemAdapter: CategoryItemAdapter
+    private lateinit var workoutItemAdapter: WorkoutItemAdapter
+    private lateinit var exercisesItemAdapter: ExercisesItemAdapter
+
+    val categoryItem = listOf(
+        ListData(R.drawable.cardio, "Cardio"),
+        ListData(R.drawable.yoga, "Yoga"),
+        ListData(R.drawable.power_train, "Power"),
+        ListData(R.drawable.ic_stretch, "Stretch"),
+        ListData(R.drawable.cardio, "Cardio"),
+        ListData(R.drawable.yoga, "Yoga"),
+        ListData(R.drawable.power_train, "Power"),
+        ListData(R.drawable.ic_stretch, "Stretch"),
+    )
+
+    val workoutsItem = listOf(
+        WorkoutItemData(R.drawable.workouts_1, "Rapid Lower Body"),
+        WorkoutItemData(R.drawable.workouts_2, "Bodyweight Stretch"),
+        WorkoutItemData(R.drawable.workouts_3, "Core Control"),
+        WorkoutItemData(R.drawable.workouts_4, "Glutes & Abs"),
+    )
+
+    val exercisesItem = listOf(
+        WorkoutItemData(R.drawable.workouts_1, "Rapid Lower Body"),
+        WorkoutItemData(R.drawable.workouts_2, "Bodyweight Stretch"),
+        WorkoutItemData(R.drawable.workouts_3, "Core Control"),
+        WorkoutItemData(R.drawable.workouts_4, "Glutes & Abs"),
+        WorkoutItemData(R.drawable.workouts_1, "Rapid Lower Body"),
+        WorkoutItemData(R.drawable.workouts_2, "Bodyweight Stretch"),
+        WorkoutItemData(R.drawable.workouts_3, "Core Control"),
+        WorkoutItemData(R.drawable.workouts_4, "Glutes & Abs"),
+    )
+
+
+    override fun setListener() {
+        setRecyclerData()
+        setRecycler1Data()
+        setRecycler2Data()
+
+    }
+    override fun allObserver() {
+
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+    private fun setRecyclerData() {
+        workoutItemAdapter = WorkoutItemAdapter(workoutsItem)
+
+
+
+
+
+
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun setRecycler1Data() {
+        categoryItemAdapter = CategoryItemAdapter(categoryItem)
     }
+
+    private fun setRecycler2Data() {
+        exercisesItemAdapter = ExercisesItemAdapter(exercisesItem)
+
+
+
+
+    }
+
 }

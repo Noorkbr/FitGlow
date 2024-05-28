@@ -13,9 +13,15 @@
         android:theme="@style/Theme.FitGlow"
         tools:targetApi="31">
         <activity
-            android:theme="@style/My.Theme.Appbar"
-            android:name=".ui.DashboardActivity"
+            android:name=".ui.MainSplashActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:exported="false"
+            android:theme="@style/My.Theme.Appbar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

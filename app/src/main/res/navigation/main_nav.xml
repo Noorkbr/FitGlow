@@ -3,11 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/welcomeFragment">
+    app:startDestination="@id/landingFragment">
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.fitglow.welcome.landingFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landingFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.fitglow.WelcomeFragment"
+        android:name="com.example.fitglow.welcome.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
@@ -19,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/wlcomkFragment2"
-        android:name="com.example.fitglow.WlcomeFragment2"
+        android:name="com.example.fitglow.welcome.WlcomeFragment2"
         android:label="fragment_wlcomk2"
         tools:layout="@layout/fragment_wlcome2" >
         <action
@@ -28,7 +38,7 @@
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment3"
-        android:name="com.example.fitglow.WelcomeFragment3"
+        android:name="com.example.fitglow.welcome.WelcomeFragment3"
         android:label="fragment_welcome3"
         tools:layout="@layout/fragment_welcome3" >
         <action
@@ -109,4 +119,5 @@
         android:name="com.example.fitglow.chooseActivitiesFragment"
         android:label="fragment_choose_activities"
         tools:layout="@layout/fragment_choose_activities" />
+
 </navigation>

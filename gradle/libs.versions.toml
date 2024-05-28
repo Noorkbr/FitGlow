@@ -11,8 +11,8 @@ activity = "1.9.0"
 constraintlayout = "2.1.4"
 navfragment="2.7.7"
 navui="2.7.7"
-ssp_sdp_version = "1.1.0"
-
+ssp_sdp_version = "1.1.1"
+lottieVersion = "6.3.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -28,7 +28,7 @@ navui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref
 
 sdp-android = { group = "com.intuit.sdp", name = "sdp-android", version.ref = "ssp_sdp_version" }
 ssp-android = { group = "com.intuit.ssp", name = "ssp-android", version.ref = "ssp_sdp_version" }
-
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottieVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

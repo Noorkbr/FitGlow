@@ -1,14 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_48sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Hi, Deborah"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:clickable="true"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_alarm"
+            app:layout_constraintBottom_toBottomOf="@id/tv_userName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_userName" />
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:backgroundTint="#E9F3FF"
+            android:hint="Search"
+            app:layout_constraintTop_toBottomOf="@id/tv_userName" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_18sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:text="View All"
+            app:layout_constraintBottom_toBottomOf="@id/tv_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_category" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categoryItemList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintStart_toStartOf="@id/tv_category"
+            app:layout_constraintTop_toBottomOf="@id/tv_category"
+            tools:listitem="@layout/item_category" />
+
+        <ImageView
+            android:id="@+id/iv_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/categoryItemList" />
+
+        <TextView
+            android:id="@+id/tv_workouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_18sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Popular Workouts"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_ads" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:text="View All"
+            app:layout_constraintBottom_toBottomOf="@id/tv_workouts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_workouts" />
+
+        <TextView
+            android:id="@+id/tv_worksTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout 80"
+            app:layout_constraintStart_toStartOf="@id/tv_workouts"
+            app:layout_constraintTop_toBottomOf="@id/tv_workouts" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/workoutItemRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintStart_toStartOf="@id/tv_worksTime"
+            app:layout_constraintTop_toBottomOf="@id/tv_worksTime"
+            tools:listitem="@layout/workouts_item_layout" />
+
+        <TextView
+            android:id="@+id/tv_exercises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_18sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Exercises"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/workoutItemRecycler" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:text="View All"
+            app:layout_constraintBottom_toBottomOf="@id/tv_exercises"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_exercises" />
+
+        <TextView
+            android:id="@+id/tv_exercisesTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout 80"
+            app:layout_constraintStart_toStartOf="@id/tv_exercises"
+            app:layout_constraintTop_toBottomOf="@id/tv_exercises" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exercisesItemRecycler"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="@id/tv_exercisesTime"
+            app:layout_constraintTop_toBottomOf="@id/tv_exercisesTime"
+            tools:listitem="@layout/exercises_item_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

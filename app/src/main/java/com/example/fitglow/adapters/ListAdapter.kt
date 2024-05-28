@@ -1,4 +1,4 @@
-package com.example.fitglow.data
+package com.example.fitglow.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.fitglow.R
+import com.example.fitglow.data.ListData
 
 class ListAdapter(context: Context, dataArrayList: ArrayList<ListData?>?) :
     ArrayAdapter<ListData?>(context, R.layout.item_layout, dataArrayList!!) {

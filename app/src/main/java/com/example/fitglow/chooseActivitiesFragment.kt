@@ -1,18 +1,13 @@
 package com.example.fitglow
 
 import android.content.Intent
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.AdapterView
 import androidx.core.content.ContextCompat
+import com.example.fitglow.adapters.ListAdapter
 import com.example.fitglow.base.BaseFragment
-import com.example.fitglow.data.ListAdapter
 import com.example.fitglow.data.ListData
 import com.example.fitglow.databinding.FragmentChooseActivitiesBinding
-import com.example.fitglow.ui.DashboardActivity
+import com.example.fitglow.ui.SplashActivity
 
 class chooseActivitiesFragment : BaseFragment<FragmentChooseActivitiesBinding>(FragmentChooseActivitiesBinding::inflate) {
 
@@ -47,7 +42,7 @@ class chooseActivitiesFragment : BaseFragment<FragmentChooseActivitiesBinding>(F
             }
 
         binding.loginButton.setOnClickListener {
-            startActivity(Intent(requireContext(),DashboardActivity::class.java))
+            startActivity(Intent(requireContext(),SplashActivity::class.java))
             requireActivity().finish()
         }
 
