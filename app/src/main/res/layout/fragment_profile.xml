@@ -52,6 +52,43 @@
             android:layout_height="wrap_content"
             android:text="@string/online"
             android:textColor="#317C34" />
+
+        <Button
+            android:id="@+id/btnaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textStyle="bold"
+            android:backgroundTint="#FFC107"
+
+            />
+        <Button
+            android:id="@+id/btnmyworkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My workout"
+            android:textStyle="bold"
+            android:backgroundTint="#FFC107"
+            />
+        <Button
+            android:id="@+id/btnreminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout Reminders"
+            android:textStyle="bold"
+            android:backgroundTint="#FFC107"
+            />
+        <Button
+            android:id="@+id/btnlogot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textStyle="bold"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:backgroundTint="#FFC107"
+            />
+
+
     </LinearLayout>
 
 
